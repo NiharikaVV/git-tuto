@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>
+            game
+        </title>
+    </head>
+    <body>
+        <link rel = "stylesheet" href="rock-paper-scissors.css">
+        <p class = "para-button"><bold>Rock Paper Scissors</bold></p>
+        <div>
+        <button onclick = "res('rock');" class = "rk"><img src="rock-emoji.png" class = "im1"></button>
+        <button onclick = "res('paper');" class = "rk"><img src="paper-emoji.png" class = "im2"></button>
+        <button onclick = "res('Scissors');" class = "rk"><img src="scissors-emoji.png" class="im3"></button>
+        <p class = "js-score result"></p>
+        <p class = "r"></p>
+        <p class = "req"></p>
+        <button onclick=" 
+        calc.win = 0;
+        calc.lose = 0;
+        calc.tie = 0; 
+        localStorage.removeItem('calc');
+        update();
+        "> reset Score</button>
+
+        </div>
+        <script src = "rock-paper-scissors.js">
+            
+            
+            
+        </script>
+    </body>
+</html>
